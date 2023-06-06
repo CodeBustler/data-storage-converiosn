@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Storage Conversion | 52/100 Projects By CodeBustler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/110022096?v=4">
+    <script src="https://kit.fontawesome.com/81d73e8e4d.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h2>Data Storage Conversion</h2>
+    <div class="main-container">
+        <!-- INPUT VALUE -->
+        <input type="number" id="userInput" placeholder="Enter your value">
+        <!-- FROM -->
+        <div class="options">
+            <div class="from">
+                <select name="inputType" id="inputType">
+                    <option value="" disabled selected hidden>From :</option>
+                    <option value="kilobyte">KiloByte</option>
+                    <option value="megabyte">MegaByte</option>
+                    <option value="gigabyte">GigaByte</option>
+                    <option value="terabyte">TeraByte</option>
+                </select>
+            </div>
+            <i class="fa-solid fa-arrows-left-right-to-line"></i>
+            <!-- TO -->
+            <div class="to">
+                <select name="outputType" id="outputType">
+                    <option value="" disabled selected hidden>To : </option>
+                    <option value="kilobyte">KiloByte</option>
+                    <option value="megabyte">MegaByte</option>
+                    <option value="gigabyte">GigaByte</option>
+                    <option value="terabyte">TeraByte</option>
+                </select>
+            </div>
+        </div>
+        <div id="displayOutput"> Result :</div>
+        <button onclick="convertData()">Convert Now</button>
+    </div>
+    <footer>By CodeBustler</footer>
+</body>
+<!-- End HTML -->
+
+</html>
